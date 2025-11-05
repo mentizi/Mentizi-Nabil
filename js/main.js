@@ -1,5 +1,5 @@
 // main.js - gestion multilingue + insertion dynamique du contenu
-const LANG_PATH = 'assets/js/lang/';
+const LANG_PATH = 'js/lang/';
 let currentLang = localStorage.getItem('lang') || 'fr';
 
 // util
