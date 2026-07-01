@@ -245,3 +245,19 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     console.error(e);
   }
 });
+
+document.getElementById("btn-apropos").addEventListener("click", function () {
+  window.location.href = "pages/apropos.html";
+});
+
+document.getElementById("btn-formation").addEventListener("click", function () {
+  window.location.href = "pages/formations.html";
+});
+
+document.getElementById("btn-experience").addEventListener("click", function () {
+  window.location.href = "pages/experience.html";
+});
+
+document.getElementById("btn-contact").addEventListener("click", function () {
+  window.location.href = "pages/contacts.html";
+});
