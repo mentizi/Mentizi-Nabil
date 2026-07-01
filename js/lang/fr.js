@@ -1,5 +1,4 @@
 window.langData = {
-<<<<<<< HEAD
   lang:"fr",	
   name: "Nabil Mentizi",
   nameHeader: "Nabil Mentizi",
@@ -9,15 +8,6 @@ window.langData = {
   heroSubtitle: "9 ans d’expérience. Expert Unix/Linux, LAMP, virtualisation (VMware, Hyper-V), conteneurisation Docker et cloud (GCP)",
   aboutTitle: "Profil",
   about: "Administrateur système et développeur full-stack avec 9 ans d’expérience. Expert Unix/Linux, LAMP, virtualisation (VMware, Hyper-V), conteneurisation Docker et cloud (GCP).Maîtrise des langages backend (PHP, Python, Node.js), frontend (JavaScript, React, HTML, CSS), systèmes (C, C++, C#, Assembleur) et développement mobile. Expérimenté en architectures MVC, microservices, méthodologies Agile, API REST, administration réseau, installation caméras IP et support helpdesk.Autonome, rigoureux et orienté solutions, je conçois et maintiens des systèmes performants, sécurisés et évolutifs.",
-=======
-  name: "Nabil Mentizi",
-  nameHeader: "Nabil Mentizi",
-  role: "Fondateur & CEO – DMS Network",
-  heroTitle: "Administrateur Système & Développeur Full-Stack",
-  heroSubtitle: "9 ans d'expérience • Cloud • Docker • PHP • JS • Réseau",
-  aboutTitle: "Profil",
-  about: "Administrateur système et développeur full-stack, 9 ans d'expérience. Expertise Unix/Linux, LAMP, virtualisation (Docker), cloud (GCP), API REST, administration réseau, installation caméras IP et support helpdesk.",
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   skillsTitle: "Compétences principales",
   skills: ["Linux / Windows Server","PHP & Laravel","JavaScript & React","Docker / Docker Compose","MySQL / SQL Server","Administration Réseau","Infogérance / Support","CI / CD"],
   expTitle: "Expériences",
@@ -26,7 +16,6 @@ window.langData = {
     { title: "Ingénieur Informatique – OTEK", period: "2016 — 2020", desc: "Fusion d'applications PHP, administration serveur, développement de modules métiers et intégrations SOAP."},
     { title: "Freelance – Développeur", period: "2020 — 2021", desc: "Développement d'applications clients, gestion documentaire, rendez-vous, maintenance."}
   ],
-<<<<<<< HEAD
   menu1:"Accueil",
   menu2:"À propos",
   menu3:"Formation",
@@ -121,7 +110,6 @@ window.langData = {
 		réseaux et gestion de projets informatiques. Solides compétences en analyse et modélisation UML.
 	  </p>
 	`,
-
 	eldiv3: `
 	  <h3>Niveau Bac scientifique</h3>
 	  <p class="muted">Lycée Si Ben Youcef Kadour, Fouka — 2013</p>
@@ -147,7 +135,6 @@ window.langData = {
       </ul>
       <p class="technologies">Technologies : PHP, HTML, CSS, JavaScript, SQL, Apache, MySQL, Ubuntu Server, phpMyAdmin, PowerAMC, Putty, WinSCP</p>
     `,
-
     eldivFor2: `
       <h3>INGÉNIEUR INFORMATIQUE</h3>
       <p>D'octobre 2016 à janvier 2020 – OTEK, Rahmania</p>
@@ -162,7 +149,6 @@ window.langData = {
         <li>Développement C, C++ et assembleur</li>
       </ul>
     `,
-
     eldivFor3: `
       <h3>DÉVELOPPEUR SOFTWARE Freelance</h3>
       <p>De janvier 2020 à septembre 2021</p>
@@ -173,7 +159,6 @@ window.langData = {
         <li>Maintenance et support technique</li>
       </ul>
     `,
-
     eldivFor4: `
       <h3>DÉVELOPPEUR SOFTWARE</h3>
       <p>BSN, Hydra</p>
@@ -183,7 +168,6 @@ window.langData = {
         <li>WordPress thèmes et plugins</li>
       </ul>
     `,
-
     eldivFor5: `
       <h3>DÉVELOPPEUR INFORMATIQUE</h3>
       <p>SARL Mourabaha, Blida</p>
@@ -194,7 +178,6 @@ window.langData = {
         <li>Gestion équipe de développement</li>
       </ul>
     `,
-
     eldivFor6: `
       <h3>DÉVELOPPEUR INFORMATIQUE ET MANAGER</h3>
       <p>EURL DMS Network, Kolea</p>
@@ -210,16 +193,8 @@ window.langData = {
 	titre_experience: `
       <i class="fas fa-graduation-cap"></i>EXPÉRIENCES</h2>
     `,
-	
 	contactTitle: "Contact",
   email: "contact@dms-network.com",
   github: "https://github.com/nabilmentizi",
   footer: "© 2025 Nabil Mentizi — DMS Network"
 };
-=======
-  contactTitle: "Contact",
-  email: "contact@dms-network.com",
-  github: "https://github.com/nabilmentizi",
-  footer: "© 2025 Nabil Mentizi — DMS Network"
-};
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6

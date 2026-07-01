@@ -1,13 +1,8 @@
 window.langData = {
-<<<<<<< HEAD
   lang:"en",	
   name: "Nabil Mentizi",
   nameHeader: "Nabil Mentizi",
   nameFooter: "Nabil Mentizi",
-=======
-  name: "Nabil Mentizi",
-  nameHeader: "Nabil Mentizi",
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   role: "Founder & CEO – DMS Network",
   heroTitle: "System Administrator & Full-Stack Developer",
   heroSubtitle: "9 years experience • Cloud • Docker • PHP • JS • Networking",
@@ -21,7 +16,6 @@ window.langData = {
     { title: "Engineer – OTEK", period: "2016 — 2020", desc: "Merging PHP apps, server admin, development of business modules and SOAP integrations."},
     { title: "Freelance Developer", period: "2020 — 2021", desc: "Client web apps, document management, scheduling and maintenance."}
   ],
-<<<<<<< HEAD
   menu1: "Home",
 	menu2: "About",
 	menu3: "Training",
@@ -158,7 +152,6 @@ eldivFor2: `
     <li>Development in C, C++ and assembly language</li>
   </ul>
 `,
-
 eldivFor3: `
   <h3>FREELANCE SOFTWARE DEVELOPER</h3>
   <p>From January 2020 to September 2021</p>
@@ -169,7 +162,6 @@ eldivFor3: `
     <li>Maintenance and technical support</li>
   </ul>
 `,
-
 eldivFor4: `
   <h3>SOFTWARE DEVELOPER</h3>
   <p>BSN, Hydra</p>
@@ -179,7 +171,6 @@ eldivFor4: `
     <li>WordPress themes and plugins development</li>
   </ul>
 `,
-
 eldivFor5: `
   <h3>IT DEVELOPER</h3>
   <p>SARL Mourabaha, Blida</p>
@@ -190,7 +181,6 @@ eldivFor5: `
     <li>Development team management</li>
   </ul>
 `,
-
 eldivFor6: `
   <h3>IT DEVELOPER AND MANAGER</h3>
   <p>EURL DMS Network, Kolea</p>
@@ -206,8 +196,6 @@ eldivFor6: `
 titre_experience: `
   <i class="fas fa-graduation-cap"></i> EXPERIENCE
 `,
-=======
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   contactTitle: "Contact",
   email: "contact@dms-network.com",
   github: "https://github.com/nabilmentizi",

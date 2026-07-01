@@ -1,13 +1,8 @@
 window.langData = {
-<<<<<<< HEAD
   lang:"es",	
   name: "Nabil Mentizi",
   nameHeader: "Nabil Mentizi",
   nameFooter: "Nabil Mentizi",
-=======
-  name: "Nabil Mentizi",
-  nameHeader: "Nabil Mentizi",
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   role: "Fundador & CEO – DMS Network",
   heroTitle: "Administrador de Sistemas y Desarrollador Full-Stack",
   heroSubtitle: "9 años de experiencia • Cloud • Docker • PHP • JS • Redes",
@@ -21,7 +16,6 @@ window.langData = {
     { title: "Ingeniero – OTEK", period: "2016 — 2020", desc: "Fusión de aplicaciones PHP, administración de servidores y desarrollo de módulos."},
     { title: "Desarrollador Freelance", period: "2020 — 2021", desc: "Aplicaciones cliente, gestión documental y mantenimiento."}
   ],
-<<<<<<< HEAD
 	menu1: "Inicio",
 	menu2: "Sobre nosotros",
 	menu3: "Formación",
@@ -143,7 +137,6 @@ eldivFor1: `
   </ul>
   <p class="technologies">Tecnologías: PHP, HTML, CSS, JavaScript, SQL, Apache, MySQL, Ubuntu Server, phpMyAdmin, PowerAMC, PuTTY, WinSCP</p>
 `,
-
 eldivFor2: `
   <h3>INGENIERO INFORMÁTICO</h3>
   <p>De octubre de 2016 a enero de 2020 – OTEK, Rahmania</p>
@@ -158,7 +151,6 @@ eldivFor2: `
     <li>Desarrollo en C, C++ y lenguaje ensamblador</li>
   </ul>
 `,
-
 eldivFor3: `
   <h3>DESARROLLADOR DE SOFTWARE FREELANCE</h3>
   <p>De enero de 2020 a septiembre de 2021</p>
@@ -169,7 +161,6 @@ eldivFor3: `
     <li>Mantenimiento y soporte técnico</li>
   </ul>
 `,
-
 eldivFor4: `
   <h3>DESARROLLADOR DE SOFTWARE</h3>
   <p>BSN, Hydra</p>
@@ -179,7 +170,6 @@ eldivFor4: `
     <li>Desarrollo de temas y plugins de WordPress</li>
   </ul>
 `,
-
 eldivFor5: `
   <h3>DESARROLLADOR INFORMÁTICO</h3>
   <p>SARL Mourabaha, Blida</p>
@@ -190,7 +180,6 @@ eldivFor5: `
     <li>Gestión de equipo de desarrollo</li>
   </ul>
 `,
-
 eldivFor6: `
   <h3>DESARROLLADOR INFORMÁTICO Y GESTOR</h3>
   <p>EURL DMS Network, Koléa</p>
@@ -206,8 +195,6 @@ eldivFor6: `
 titre_experience: `
   <i class="fas fa-graduation-cap"></i> EXPERIENCIAS
 `,
-=======
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   contactTitle: "Contacto",
   email: "contact@dms-network.com",
   github: "https://github.com/nabilmentizi",

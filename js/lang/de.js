@@ -1,13 +1,8 @@
 window.langData = {
-<<<<<<< HEAD
   lang:"de",
   name: "Nabil Mentizi",
   nameHeader: "Nabil Mentizi",
   nameFooter: "Nabil Mentizi",
-=======
-  name: "Nabil Mentizi",
-  nameHeader: "Nabil Mentizi",
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   role: "Gründer & CEO – DMS Network",
   heroTitle: "Systemadministrator & Full-Stack Entwickler",
   heroSubtitle: "9 Jahre Erfahrung • Cloud • Docker • PHP • JS • Netzwerk",
@@ -21,7 +16,6 @@ window.langData = {
     { title: "Ingenieur – OTEK", period: "2016 — 2020", desc: "Zusammenführung von PHP-Anwendungen, Serververwaltung und Modulentwicklung."},
     { title: "Freelance Entwickler", period: "2020 — 2021", desc: "Kundenanwendungen, Dokumentenmanagement und Wartung."}
   ],
-<<<<<<< HEAD
   menu1: "Startseite",
   menu2: "Über uns",
   menu3: "Ausbildung",
@@ -108,7 +102,6 @@ eldiv1: `
     Beherrschung von Überwachungswerkzeugen, Netzwerkkabelverlegung und Fernkonfiguration.
   </p>
 `,
-
 eldiv2: `
   <h3>Bachelor in Informationssystemen und Softwaretechnik</h3>
   <p class="muted">Universität Saad Dahleb, Blida — 2016</p>
@@ -117,7 +110,6 @@ eldiv2: `
     Netzwerken und IT-Projektmanagement. Solide Kenntnisse in UML-Analyse und Modellierung.
   </p>
 `,
-
 eldiv3: `
   <h3>Abitur (Naturwissenschaftlicher Zweig)</h3>
   <p class="muted">Gymnasium Si Ben Youcef Kadour, Fouka — 2013</p>
@@ -143,7 +135,6 @@ eldivFor1: `
   </ul>
   <p class="technologies">Technologien: PHP, HTML, CSS, JavaScript, SQL, Apache, MySQL, Ubuntu Server, phpMyAdmin, PowerAMC, PuTTY, WinSCP</p>
 `,
-
 eldivFor2: `
   <h3>INFORMATIKINGENIEUR</h3>
   <p>Oktober 2016 bis Januar 2020 – OTEK, Rahmania</p>
@@ -158,7 +149,6 @@ eldivFor2: `
     <li>Entwicklung in C, C++ und Assembler</li>
   </ul>
 `,
-
 eldivFor3: `
   <h3>FREELANCE SOFTWAREENTWICKLER</h3>
   <p>Januar 2020 bis September 2021</p>
@@ -169,7 +159,6 @@ eldivFor3: `
     <li>Wartung und technischer Support</li>
   </ul>
 `,
-
 eldivFor4: `
   <h3>SOFTWAREENTWICKLER</h3>
   <p>BSN, Hydra</p>
@@ -179,7 +168,6 @@ eldivFor4: `
     <li>WordPress-Themes und Plugins</li>
   </ul>
 `,
-
 eldivFor5: `
   <h3>INFORMATIKENTWICKLER</h3>
   <p>SARL Mourabaha, Blida</p>
@@ -206,8 +194,6 @@ eldivFor6: `
 titre_experience: `
   <i class="fas fa-graduation-cap"></i> ERFAHRUNGEN
 `,
-=======
->>>>>>> 3097342ec9e4723c586dfb0b304b698a0fdff5e6
   contactTitle: "Kontakt",
   email: "contact@dms-network.com",
   github: "https://github.com/nabilmentizi",
