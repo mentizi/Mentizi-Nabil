@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# enlever .html et rediriger vers /pages/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)$ pages/$1.html [L]
