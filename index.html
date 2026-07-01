@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio – Nabil Mentizi</title>
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="img/logo.png" alt="Logo" class="logo"/>
+      <div class="brand-text">
+        <span class="name" id="nameHeader">Nabil Mentizi</span>
+        <span class="role" id="roleHeader">Fondateur & CEO – DMS Network</span>
+      </div>
+    </div>
+	 <nav class="navbar">
+      <ul>
+        <li><a id="menu_1" href="#accueil" class="active">Accueil</a></li>
+        <li><a id="menu_2" href="pages/apropos.html">À propos</a></li>
+        <li><a id="menu_3" href="pages/formations.html">Formation</a></li>
+        <li><a id="menu_4" href="#experience">Expérience</a></li>
+        <li><a id="menu_5" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+	<div class="lang-switch" role="navigation" aria-label="Choisir la langue">
+        <button data-lang="fr" class="lang active">FR</button>
+        <button data-lang="en" class="lang">EN</button>
+        <button data-lang="es" class="lang">ES</button>
+        <button data-lang="de" class="lang">DE</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </div>
+  
+    
+  </header>
+
+  <main class="container">
+    <section class="hero">
+		<div class="col1">
+			<div class="hero-right">
+			<div class="card profile-card">
+			  <img src="img/logo.png" alt="photo" class="avatar"/>
+			  <div class="card-body">
+				<h3 id="nameCard"></h3>
+				<p id="roleCard" class="muted"></p>
+				<div class="controls">
+				  <a id="downloadCv" class="btn-download" href="pdf/CV_MENTIZI_NABIL_fr.pdf" download>
+					⤓ Télécharger CV
+				  </a>
+				  
+				</div>
+			  </div>
+			</div>
+			<!-- 🌌 Boutons interstellaires -->
+			<!-- 🚀 Boutons latéraux flottants -->
+			<div class="floating-buttons">
+			  <button class="float-btn" id="btn-apropos" title="À propos">
+				<i class="fas fa-user"></i>
+			  </button>
+
+			  <button class="float-btn" id="btn-formation" title="Formation">
+				<i class="fas fa-graduation-cap"></i>
+			  </button>
+
+			  <button class="float-btn" id="btn-experience" title="Expérience">
+				<i class="fas fa-briefcase"></i>
+			  </button>
+
+			  <button class="float-btn" id="btn-contact" title="Contact">
+				<i class="fas fa-envelope"></i>
+			  </button>
+			</div>
+
+			<!-- Canvas pour le signal électrique -->
+			<canvas id="signalCanvas"></canvas>
+
+
+		</div>
+		
+		<div class="hero-left">
+			<h1 id="heroTitle"></h1>
+			<p id="heroSubtitle" class="lead"></p>
+			<div class="cta">
+				<a id="contactMail" class="cta-btn" href="mailto:contact@dms-network.com">✉️ Contact</a>
+				<a id="linkGithub" class="cta-btn ghost" target="_blank" rel="noopener">GitHub</a>
+			</div>
+		</div>
+					  
+	  </div>
+	  <div class="col2">
+   
+		  <article class="card animated" id="aboutCard">
+			<h2 id="aboutTitle"></h2>
+			<p id="aboutText"></p>
+		  </article>
+
+		  <article class="card animated" id="skillsCard">
+			  <h2 id="c_p" >Compétences principales</h2>
+
+			  <div class="skills-grid">
+
+				<div class="skill-group">
+				  <h3>Développement</h3>
+<div class="skills-list">
+  <span id="el1" class="skill-pill">Algorithme</span>
+  <span id="el2" class="skill-pill">PHP</span>
+  <span id="el3" class="skill-pill">Laravel</span>
+  <span id="el4" class="skill-pill">Symfony</span>
+  <span id="el5" class="skill-pill">wordpresse</span>
+  <span id="el6" class="skill-pill">JavaScript</span>
+  <span id="el7" class="skill-pill">TypeScript</span>
+  <span id="el8" class="skill-pill">NodeJS</span>
+  <span id="el9" class="skill-pill">React</span>
+  <span id="el10" class="skill-pill">Angularjs</span>
+  <span id="el11" class="skill-pill">HTML5 / CSS3</span>
+  <span id="el12" class="skill-pill">XML</span>
+  <span id="el13" class="skill-pill">CANVAS /SVG</span>
+  <span id="el14" class="skill-pill">Boostrap</span>
+  <span id="el15" class="skill-pill">AJAX</span>
+  <span id="el16" class="skill-pill">API REST</span>
+  <span id="el17" class="skill-pill">SOAP</span>
+  <span id="el18" class="skill-pill">Python</span>
+  <span id="el19" class="skill-pill">Django</span>
+  <span id="el20" class="skill-pill">C</span>
+  <span id="el21" class="skill-pill">C++</span>
+  <span id="el22" class="skill-pill">c#</span>
+  <span id="el23" class="skill-pill">JAVA</span>
+  <span id="el24" class="skill-pill">Spring Boot</span>
+  <span id="el25" class="skill-pill">Assembleur 8086</span>
+  <span id="el26" class="skill-pill">UML</span>
+  <span id="el27" class="skill-pill">Orienté objet</span>
+  <span id="el28" class="skill-pill">VBA</span>
+</div>
+
+<h3>Base des données</h3>
+<div class="skills-list">
+  <span id="el29" class="skill-pill">Mysql</span>
+  <span id="el30" class="skill-pill">Sql</span>
+  <span id="el31" class="skill-pill">MariaDb</span>
+  <span id="el32" class="skill-pill">Nosql</span>
+  <span id="el33" class="skill-pill">phpMyAdmin</span>
+  <span id="el34" class="skill-pill">SQL Server</span>
+  <span id="el35" class="skill-pill">MySQL Workbench</span>
+</div>
+
+<h3>Systèmes & Serveurs</h3>
+<div class="skills-list">
+  <span id="el36" class="skill-pill">Linux (Ubuntu / Debian / CentOS)</span>
+  <span id="el37" class="skill-pill">Windows Server / Windows 10/11</span>
+  <span id="el38" class="skill-pill">Conteneurisation / Docker (images, Docker files, Docker Compose)</span>
+  <span id="el39" class="skill-pill">Virtualisation (VMware, Proxmox)</span>
+  <span id="el40" class="skill-pill">Optimisation des ressources systèmes (CPU, RAM, stockage)</span>
+  <span id="el41" class="skill-pill">Serveurs web : Apache, Nginx</span>
+  <span id="el42" class="skill-pill">Déploiement, configuration et gestion d’hébergements web</span>
+</div>
+
+<h3>Réseaux & Sécurité</h3>
+<div class="skills-list">
+  <span id="el43" class="skill-pill">Administration Réseau</span>
+  <span id="el44" class="skill-pill">Firewall / VPN / WIFI</span>
+  <span id="el45" class="skill-pill">TCP / IP / UDP / DNS / DHCP</span>
+  <span id="el46" class="skill-pill">Configuration de routeurs</span>
+  <span id="el47" class="skill-pill">Câblage & Topologie</span>
+  <span id="el48" class="skill-pill">Partages réseau</span>
+  <span id="el49" class="skill-pill">Surveillance & Caméras IP</span>
+  <span id="el50" class="skill-pill">Wireshark & PuTTY</span>
+  <span id="el51" class="skill-pill">WinSCP & FileZilla & outils de synchronisation</span>
+</div>
+
+<h3>Maintenance Informatique & Support</h3>
+<div class="skills-list">
+  <span id="el52" class="skill-pill">ADiagnostic matériel/logiciel, remplacement de composants</span>
+  <span id="el53" class="skill-pill">Installation, mise à jour et clonage de systèmes Windows/Linux</span>
+  <span id="el54" class="skill-pill">Gestion des périphériques, sauvegarde/restauration de données</span>
+  <span id="el55" class="skill-pill">Support technique Niveaux 1 à 3, suivi des tickets et documentation</span>
+</div>
+
+<h3>Outils & Cloud</h3>
+<div class="skills-list">
+  <span id="el56" class="skill-pill">Git / GitHub</span>
+  <span id="el57" class="skill-pill">Google Cloud</span>
+  <span id="el58" class="skill-pill">Microsoft Azure</span>
+  <span id="el59" class="skill-pill">cPanel / Plesk</span>
+  <span id="el60" class="skill-pill">Visual Studio Code, Visual Studio Pro, Notepad++</span>
+  <span id="el61" class="skill-pill">Microsoft Office, Google Workspace (Console Cloud, Drive...)</span>
+</div>
+
+<h3>Soft Skills</h3>
+<div class="skills-list">
+  <span id="el62" class="skill-pill">Gestion de projet</span>
+  <span id="el63" class="skill-pill">Support & Helpdesk</span>
+  <span id="el64" class="skill-pill">Travail en équipe</span>
+  <span id="el65" class="skill-pill">Communication</span>
+  <span id="el66" class="skill-pill">Autonomie</span>
+</div>
+
+			  </div>
+			</article>
+
+
+		  <article class="card animated" id="expCard">
+			<h2 id="expTitle"></h2>
+			<div id="expList" class="timeline"></div>
+		  </article>
+		</div>
+    </section>
+
+    <section class="contact-section">
+      <h2 id="con" ></h2>
+	</section>
+</main>
+<div class="section-nodes">
+  <div class="node node1"></div>
+  <div class="node node2"></div>
+  <div class="node node3"></div>
+  <div class="node node4"></div>
+</div>	  
+	  <canvas id="network-bg"></canvas>
+
+	<script src="js/network-bg.js"></script>
+	<script src="js/signal.js"></script>
+	<script src="js/float-motion.js"></script>
+	<footer class="footer">
+		© 2025 Mentizi Nabil — Tous droits réservés.
+	</footer>
+	</body>
+</html>
+	  

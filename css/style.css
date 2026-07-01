@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+:root{
+  --bg1: #07112a;
+  --bg2: #12306a;
+  --accent: #2dd4bf;
+  --primary: #60a5fa;
+  --muted: #9ca3af;
+  --card: rgba(255,255,255,0.06);
+  --glass: rgba(255,255,255,0.04);
+}
+*{box-sizing:border-box}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+/* ----- HEADER & NAV ----- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.brand-text h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.brand-text p {
+  font-size: 12px;
+  margin: 0;
+  color: #94a3b8;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #38bdf8;
+}
+
+/* ----- SECTIONS ----- */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section {
+  margin: 80px 0;
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* ----- HERO ----- */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  color: #93c5fd;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ----- TIMELINE ----- */
+.timeline {
+  border-left: 2px solid #38bdf8;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  color: #e0f2fe;
+}
+
+.timeline-item p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ----- ANIMATIONS ----- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.avatar{width:350px;height:350px;border-radius:12px;object-fit:cover;display:block;margin:0 auto 12px}
+
+
+/* ----- BOUTON TELECHARGER CV ----- */
+.btn-download {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+
+
+/* ==========================================================
+   🎯 SECTION HERO EN DEUX COLONNES (col1 + col2)
+   ========================================================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 60px 20px;
+}
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---- Profil gauche (col1) ---- */
+.hero-left {
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  text-align: left;
+}
+
+.hero-left h1 {
+  font-size: 26px;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.hero-left p.lead {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(37,99,235,0.3);
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(37,99,235,0.5);
+}
+
+.cta-btn.ghost {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+/* ---- Carte profil ---- */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  width: 100%;
+  max-width: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+
+.avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 25px rgba(37,99,235,0.25);
+}
+
+.card-body h3 {
+  font-size: 20px;
+  margin: 8px 0 2px;
+  color: #e0f2fe;
+}
+
+.card-body p.muted {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* ---- Bouton Télécharger CV ---- */
+.btn-download {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+.btn-download:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+/* ---- Cartes col2 (à propos, compétences, expérience) ---- */
+.col2 .card {
+  background: var(--glass);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.col2 .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.col2 .card h2 {
+  color: var(--primary);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.col2 .card p {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ---- Skills ---- */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  background: rgba(255,255,255,0.05);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #e0f2fe;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ---- Timeline ---- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.timeline-item {
+  padding-left: 14px;
+  border-left: 2px solid var(--primary);
+}
+
+.timeline-item h4 {
+  color: #e0f2fe;
+  margin: 0;
+  font-size: 16px;
+}
+
+.timeline-item p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .col1, .col2 {
+    align-items: center;
+  }
+  .profile-card {
+    max-width: 100%;
+  }
+}
+
+/* ====== BACKGROUND RÉSEAU ANIMÉ ====== */
+#network-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(135deg, var(--bg2), var(--bg1));
+}
+
+
+
+
+/* Le reste du site au-dessus du canvas */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Connexions entre les articles (effet réseau) */
+.col2 .card {
+  position: relative;
+}
+
+.col2 .card::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(180deg, #3b82f6, transparent);
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+.col2 .card:last-child::after {
+  display: none;
+}
+
+
+/* ==== NŒUDS DE RÉSEAU FIXES ==== */
+.section-nodes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.node {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(59,130,246,0.6);
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.node1 { top: 20%; left: 15%; animation-delay: 0s; }
+.node2 { top: 45%; left: 60%; animation-delay: 1s; }
+.node3 { top: 70%; left: 30%; animation-delay: 2s; }
+.node4 { top: 85%; left: 75%; animation-delay: 3s; }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.6); opacity: 0.3; }
+}
+/* ==========================================================
+   🌌 BOUTONS ASTROÏDES FLOTTANTS
+   ========================================================== */
+.astro-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.astro-btn {
+  position: absolute;
+  background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 80%);
+  border: none;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 25px rgba(59,130,246,0.5);
+}
+
+.astro-btn img {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 6px rgba(59,130,246,0.8));
+}
+
+.astro-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 40px rgba(59,130,246,0.9);
+}
+
+/* Positions autour du profil */
+#btn-apropos { top: 15%; left: 70%; }
+#btn-formation { top: 75%; left: 70%; }
+#btn-experience { top: 15%; left: 25%; }
+#btn-contact { top: 75%; left: 25%; }
+
+/* Canvas du signal électrique */
+#signalCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.astro-btn.pulse {
+  box-shadow: 0 0 50px rgba(96,165,250,1);
+  transform: scale(1.3);
+}
+/* =====================================================
+   🚀 BOUTONS FLOTTANTS LATÉRAUX
+   ===================================================== */
+.floating-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 5;
+  padding: 0 8%;
+}
+
+/* Boutons */
+.float-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59,130,246,0.2), rgba(59,130,246,0.05));
+  border: 2px solid rgba(59,130,246,0.4);
+  color: #60a5fa;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(59,130,246,0.3);
+  backdrop-filter: blur(8px);
+  animation: floatMotion 5s ease-in-out infinite;
+}
+
+.float-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 40px rgba(96,165,250,0.8);
+}
+
+/* Flottement spatial */
+@keyframes floatMotion {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Positions */
+#btn-apropos, #btn-formation {
+  margin-right: auto;
+  animation-delay: 0.5s;
+}
+
+#btn-experience, #btn-contact {
+  margin-left: auto;
+  animation-delay: 1.5s;
+}
+
+#btn-apropos { transform: translateY(-60px); }
+#btn-formation { transform: translateY(60px); }
+#btn-experience { transform: translateY(-60px); }
+#btn-contact { transform: translateY(60px); }
+
+/* Canvas du signal */
+#signalCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 4;
+}
+/* =====================================================
+   🚀 BOUTONS LATÉRAUX FIXES ET VISIBLES
+   ===================================================== */
+.floating-buttons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Bouton général */
+.float-btn {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59,130,246,0.25), rgba(59,130,246,0.05));
+  border: 2px solid rgba(59,130,246,0.5);
+  color: #60a5fa;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(59,130,246,0.4);
+  backdrop-filter: blur(6px);
+}
+
+.float-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 40px rgba(147,51,234,0.8);
+}
+
+/* === Positions précises et visibles === */
+
+/* Gauche */
+#btn-apropos {
+  left: 40px;
+  top: calc(50% - 120px);
+}
+
+#btn-formation {
+  left: 40px;
+  top: calc(50% + 40px);
+}
+
+/* Droite */
+#btn-experience {
+  right: 40px;
+  top: calc(50% - 120px);
+}
+
+#btn-contact {
+  right: 40px;
+  top: calc(50% + 40px);
+}
+
+/* === Canvas du signal === */
+#signalCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* =====================================================
+   🎓 SECTION FORMATION
+   ===================================================== */
+.formation-section {
+  position: relative;
+  margin-top: 80px;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  border-radius: 16px;
+  overflow: hidden;
+
+}
+
+.formation-section h2 {
+  text-align: center;
+  color: #60a5fa;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  border-left: 2px solid #38bdf8;
+  padding-left: 30px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(96,165,250,0.8);
+}
+
+.timeline-item h3 {
+  color: #93c5fd;
+  margin-bottom: 6px;
+}
+
+.timeline-item p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.timeline-item ul {
+  margin: 10px 0 0 20px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+
+
+/* Canvas de background (sous le contenu) */
+#bgIconsCanvas {
+  position: fixed;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0; */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;     /* laisse la page interactive */
+  background: linear-gradient(135deg, var(--bg2), var(--bg1)); /* ta palette */
+}
+
+/* Assure que le contenu est au-dessus */
+main, header, footer, .formation-section {
+  position: relative;
+  z-index: 1;
+}
+
+
+#bgFormation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(135deg, var(--bg2), var(--bg1));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
